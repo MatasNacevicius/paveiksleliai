@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <div>
+        <label for="username"> User id:</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="password"> Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="7"
+          maxlength="12"
+        />
+      </div>
+      <div>
+        <label for="vardas"> Name:</label>
+        <input type="text" name="vardas" id="vardas" pattern="[A-Za-z]{1}" />
+      </div>
+      <div>
+        <label for="adresas"> Address:</label>
+        <input type="text" name="adresas" id="adresas" />
+      </div>
+      <div>
+<label for="salis"> Country:</label>
+<select name="salis" id="salis">
+    <option value=""> None</option>
+    <option value="Kaunas"> Kaunas</option>
+    <option value="Vilnius"> Vilnius</option>
+    <option value="Klaipeda"> Klaipeda</option>
+    <option value="Siauliai"> Siauliai</option>
+    <option value="Palanga"> Palanga</option>
+    <option value="Visaginas"> Visaginas</option>
+    <option value="Marijampole"> Marijampole</option>
+</select>
+      </div>
+      <div>
+        <label for="zipas"> ZIP code:</label>
+        <input type="text" name="zipas" id="zipas" pattern="[0-9]{1}">
+      </div>
+      <div>
+        <label for="pastas"> Email:</label>
+        <input type="email" name="pastas" id="pastas" required>
+      </div>
+      <div>
+        <label for="lytis"> Sex:</label>
+        <label for="Male"> Male</label>
+        <input type="radio" name="lytis" id="Male" value="Male">
+        <label for="Female"> Female</label>
+        <input type="radio" name="lytis" id="Female" value="Female">
+      </div>
+      <div>
+        <label for="kalbos"> Language:</label>
+        <label for="anglu"> English</label>
+        <input type="checkbox" name="anglu" id="anglu">
+        <label for="lietuviu"> Lithuanian</label>
+        <input type="checkbox" name="lietuviu" id="lietuviu">
+        <label for="ispanu"> Spanish</label>
+        <input type="checkbox" name="ispanu" id="ispanu" >
+        <label for="rusu">Russian</label>
+        <input type="checkbox" name="rusu" id="rusu">
+        <label for="kinu">Chinese</label>
+        <input type="checkbox" name="kinu" id="kinu">
+      </div>
+      <div>
+        <label for="apie"> About</label>
+        <textarea name="apie" id="apie" cols="50" rows="10"></textarea>
+      </div>
+      <div>
+        <button type="submit">submit</button>
+      </div>
+    </form>
+  </body>
+</html>
